@@ -36,10 +36,18 @@ class App extends Component {
 
   searchNearMeHandler = () => {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(({ coords }) => {
-        const { longitude, latitude } = coords;
-        this.searchHandler({ longitude, latitude });
-      });
+      navigator.geolocation.getCurrentPosition(
+        ({ coords }) => {
+          const { longitude, latitude } = coords;
+          this.searchHandler({ longitude, latitude });
+        },
+        ({ code, message }) => {
+          alert(
+            `Something went wrong finding your location. [${code} : ${message}]`
+          );
+        },
+        { enableHighAccuracy: true, maximumAge: 10000 }
+      );
     } else {
       console.error("location is not enabled");
     }
