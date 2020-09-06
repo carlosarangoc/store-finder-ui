@@ -1,0 +1,22 @@
+.header-container {
+  background-color: #fcbe00;
+  padding-top: 10px;
+}
+
+.col,
+.col-md-auto {
+  margin-bottom: 10px !important;
+}
+
+.logo {
+  height: 2rem;
+}
+
+.btn {
+}
+
+.near-me-button {
+  background-color: #c60574 !important;
+  border: none !important;
+  width: 100px;
+}
