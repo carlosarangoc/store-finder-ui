@@ -1,6 +1,6 @@
 # Jumbo Store Finder UI
 
-This is the UI for the Jumbo Store Finder application. It connects to [Jumbo Store Finder REST API]() and display the nearest stores to the users location or a given position.
+This is the UI for the Jumbo Store Finder application. It connects to [Jumbo Store Finder REST API](https://github.com/carlosarangoc/store-finder) and display the nearest stores to the users location or a given position.
 
 You can visit the app at: http://jumbo-store-finder.surge.sh/
 

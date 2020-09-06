@@ -20,7 +20,8 @@ class Header extends Component {
   }
 
   clearState = () => {
-    this.props.searchHandler({
+    const { searchHandler } = this.props;
+    searchHandler({
       longitude: "",
       latitude: "",
     });
