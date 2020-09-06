@@ -3,7 +3,7 @@ import GoogleMapReact from "google-map-react";
 import shouldPureComponentUpdate from "react-pure-render/function";
 
 import LocationMarker from "./LocationMarker/LocationMarker";
-import { DEFAULT_CENTER, DEFAULT_ZOOM } from "../../constants/map";
+import { AWS_API_KEY, DEFAULT_CENTER, DEFAULT_ZOOM } from "../../constants/map";
 
 import "./Map.css";
 
@@ -20,7 +20,7 @@ export default class Map extends Component {
     return (
       <div className="google-map">
         <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyAKwirOvWLRdG228qUkaWKvOZPmfze7GJw" }}
+          bootstrapURLKeys={{ key: AWS_API_KEY }}
           defaultCenter={DEFAULT_CENTER}
           defaultZoom={DEFAULT_ZOOM}
           onChildClick={this.handleChildClick}
